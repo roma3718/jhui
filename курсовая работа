@@ -5,10 +5,14 @@
     <title>Ваша страница</title>
   </head>
   <body>
+<style>
+background-color: #ff0000;
+}
+</style>
     <h1>курсовой проэкт</h1>
     <p>стеленко роман</p>
     <p>Первое что я покажу это холст</p>
-<canvas id="myCanvas" width="400" height="400" style="border:1px solid black;"></canvas>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid black;" onmousedown="startDrawing(event);" onmousemove="draw(event);" onmouseup="stopDrawing();"></canvas>
 <script>
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
