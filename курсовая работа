@@ -5,15 +5,17 @@
     <title>Ваша страница</title>
   </head>
   <body>
-<style>
-background-color: #ff0000;
-}
-</style>
+< background-color=green >
     <h1>курсовой проэкт</h1>
     <p>стеленко роман</p>
     <p>Первое что я покажу это холст</p>
 <canvas id="myCanvas" width="500" height="500" style="border:1px solid black;" onmousedown="startDrawing(event);" onmousemove="draw(event);" onmouseup="stopDrawing();"></canvas>
 <script>
+var cx = document.querySelector("canvas").getContext("2d");
+  cx.strokeStyle = "blue";
+  cx.strokeRect(5, 5, 50, 50);
+  cx.lineWidth = 5;
+  cx.strokeRect(135, 5, 50, 50);
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     var isDrawing = false;
